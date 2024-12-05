@@ -1,1 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>US Map with Text Boxes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
+    <h1>US States Language Data</h1>
+    
+    <!-- Map container -->
+    <div id="map-container">
+        <img src="us_map.png" alt="US Map" id="us-map" usemap="#us-map" />
+        
+        <!-- Textboxes for input -->
+        <div id="alabama" class="input-box" style="top: 250px; left: 200px;">
+            <label for="spanish-alabama">Spanish Speakers:</label>
+            <input type="text" id="spanish-alabama">
+            <label for="foreign-alabama">Foreign Language Speakers:</label>
+            <input type="text" id="foreign-alabama">
+        </div>
+
+        <div id="california" class="input-box" style="top: 150px; left: 100px;">
+            <label for="spanish-california">Spanish Speakers:</label>
+            <input type="text" id="spanish-california">
+            <label for="foreign-california">Foreign Language Speakers:</label>
+            <input type="text" id="foreign-california">
+        </div>
+
+        <!-- Add more state input boxes similarly -->
+    </div>
+
+    <!-- Save Button -->
+    <button id="save-button">Save Data</button>
+
+    <!-- Result Display -->
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
